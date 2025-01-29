@@ -1,4 +1,5 @@
 body {
+	font-family: "Schibsted Grotesk", serif;
 	margin: 0;
 }
 
@@ -215,35 +216,128 @@ footer p {
 
 .props {
 	color: #fff;
-	font-size: 48px;
+	font-size: 2.5vw;
 	padding: 16px;
 	margin-left:5%;
 	margin-top: 15%;
 	width: 80%;
+	transition: margin-left 0.5s ease-in;
+	line-height: 3.7rem;
 }
 
 .props p {
 	margin: 0;
 	text-shadow:
-    1px 1px 0 #0005,
-    -1px 1px 0 #0005,
-    -1px -1px 0 #0005,
-    1px -1px 0 #0005;
+    1px 1px 0 #0001,
+    -1px 1px 0 #0001,
+    -1px -1px 0 #0001,
+    1px -1px 0 #0001;
+}
+
+
+.props--1 {
+	width: 45%;
+	margin-left: 51%;
+	margin-top: 22%;
+}
+
+.props--2 {
+	margin-top: 16%;
+	margin-left: 63%;
+}
+
+.props--3 {
+	margin-top: 19%;
+	margin-left: 53%;
+}
+
+
+.props--4 {
+	margin-left: 59%;
+	margin-top: 12%;
+	width: 100%;
+}
+
+
+.props--5 {
+	margin-left: 50%;
+	margin-top: 26%;
+	width: 100%;
+}
+
+.props--before {
+	margin-left: 0
 }
 
 @media (max-width: 1422px) {
 	.props {
-		font-size: 3vw;
-		margin-top: 30%;
-		background-color: #00000015;
+		font-size: 2.8vw;
+		margin-top: 38%;
+		width: 100%;
 	}	
 	.props p {
-		text-shadow: unset;
+	text-shadow:
+	1px 1px 0 #0000,
+	-1px 1px 0 #0002,
+	-1px -1px 0 #000e,
+	1px -1px 0 #0000;
 	}
 	.slider {
 		aspect-ratio: 12/7;
 	}
+	.props--1 {
+		margin-left: 47%;
+	}
+	.props--2 {
+		margin-left: 58%;
+		margin-top: 34%;
+	}
+	.props--3 {
+		margin-left: 47%;
+	}
+	.props--4 {
+		margin-top: 33%;
+		margin-left: 56%;
+	}
+	.props--5 {
+		margin-top: 44%;
+		margin-left: 48%;
+	}
+	.props--before {
+		margin-left: 0;
+	}
 }
+
+@media (max-width: 1090px) {
+	.props {
+	font-size: 3.5vw;
+	line-height: 4.5vw;
+	}
+	.props--1 {
+		margin-left: 5%;
+		margin-top: 45%;
+
+	}
+	.props--2 {
+		margin-left: 33%;
+		margin-top: 31%;
+	}
+	.props--3 {
+		margin-left: 23%;
+		margin-top:35%;
+	}
+	.props--4 {
+		margin-left: 31%;
+		margin-top: 24%;
+	}
+	.props--5 {
+		margin-left: 20%;
+	}
+	.props--before {
+		margin-left: 0;
+	}
+}
+
 
 @media (max-width: 1060px) {
 	footer object {
@@ -274,8 +368,67 @@ footer p {
 	}
 }
 
+@media (max-width: 670px) {
+	.props {
+		font-size: 4vw;
+	}
+	.props--1 {
+		margin-top: 38%;
+		margin-left: 6%;
+
+	}
+	.props--2 {
+		margin-left: 24%;
+		line-height: 5vw;
+		margin-top: 27%;
+		font-size:4.5vw;
+	}
+	.props.props--2 p {
+		text-shadow:
+		1px 1px 0 #0000,
+		-1px 1px 0 #0002,
+		-1px -1px 0 #000e,
+		1px -1px 0 #0000;
+		}		
+	}
+	.props.props--4 p {
+		text-shadow:
+		1px 1px 0 #0000,
+		-1px 1px 0 #0002,
+		-1px -1px 0 #0008,
+		1px -1px 0 #0000;
+	}
+	.props--3 {
+		margin-left: 19%;
+		margin-top: 32%;
+	}
+	.props--4 {
+		margin-left: 27%;
+		line-height: 4.96vw;
+		margin-top: 24%;
+	}
+	.props--5 {
+		margin-left: 9%;
+		margin-top: 42%;
+		font-size: 4.8vw;
+	}
+	.props p {
+		text-shadow:
+		1px 1px 0 #0000,
+		-1px 1px 0 #0002,
+		-1px -1px 0 #0005,
+		1px -1px 0 #0000;
+}
+
 @media (max-width: 600px) {
-	footer{
+	.props p, .props.props--2 p, .props.props--4 p {
+		text-shadow:
+		1px 1px 0 #0005,
+		-1px 1px 0 #0005,
+		-1px -1px 0 #0005,
+		1px -1px 0 #0005;
+}
+	footer {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
@@ -332,12 +485,8 @@ footer p {
 	.video iframe {
 		width: 100%;
 	}
-	.props p {
-		font-size: 3.5vw;
-	}
 	.props {
 		margin-top: 0;
-		background-color: #00000011;
 		width: 95%;
 		padding-left: 1vw;
 		padding-right: 3.6vw;
@@ -358,13 +507,40 @@ footer p {
 	.pages {
 		column-gap: 2vw;
 	}
-	.page{
-		width: 2vw;
+	.page {
+		width: 1.6vw;
 		height: unset;
 		aspect-ratio: 10/16;
 	} 
 	.video {
 		aspect-ratio: 440/236;
+	}
+	.props--1 {
+		font-size: 4vw;
+		margin-top: 34%;
+	}
+	.props--2 {
+		font-size: 4.8vw;
+		line-height: 6vw;
+		margin-top: 22%;
+	}
+	.props--3 {
+		margin-top: 28%;
+		font-size: 4.5vw;
+		margin-left: 15%;
+		line-height: 5vw;
+	}
+	.props--4 {
+		margin-left: 23%;
+		margin-top: 14%;
+		line-height: 6vw;
+		font-size: 4.8vw;
+	}
+	.props--5 {
+		margin-top: 39%;
+	}
+	.props--before {
+		margin-left: 0;
 	}
 }
 
